@@ -1,0 +1,4 @@
+baseURL = 'http://chonla.com/'
+languageCode = 'en-us'
+title = 'chonla'
+theme = "PaperMod"
