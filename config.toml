@@ -1,4 +1,4 @@
-baseURL = 'http://chonla.com/'
+baseURL = 'https://www.chonla.com/'
 languageCode = 'en-us'
 title = 'chonla'
 theme = "PaperMod"
