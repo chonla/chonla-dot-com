@@ -1,7 +1,7 @@
 ---
 title: "ย้ายบ้าน"
 date: 2022-07-01T09:20:34+07:00
-draft: true
+draft: false
 ---
 
 ก่อนหน้านี้ chonla.com เคยใช้เป็น self-hosted wordpress ซึ่งจริง ๆ แล้วมันง่ายนะ ทุกอย่างก็ทำผ่านเว็บทั้งหมด จัดหน้าอะไรก็ง่าย เพราะทุกอย่างเป็น WYSIWYG (What you see is what you get) editor
