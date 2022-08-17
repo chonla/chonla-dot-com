@@ -5,41 +5,33 @@
     </header>
     <div class="body">
         <div class="cover" style="background-image: url('{{ .Params.cover_image }}')"></div>
-        {{ if .Params.updated_at }}
-        {{ $updatedDate := .Params.updated_at | time }}
-        <div class="updated-date">อัปเดตวันที่ {{ partial "thai-date.html" $updatedDate }}</div>
-        {{ else }}
-        <div class="updated-date">อัปเดตวันที่ {{ partial "thai-date.html" .Date }}</div>
-        {{ end }}
+        <aside class="meta">
+            {{ if .Params.updated_at }}
+            {{ $updatedDate := .Params.updated_at | time }}
+            <div class="updated-date">อัปเดตวันที่ {{ partial "thai-date.html" $updatedDate }}</div>
+            {{ else }}
+            <div class="updated-date">อัปเดตวันที่ {{ partial "thai-date.html" .Date }}</div>
+            {{ end }}
+
+            {{ with .Params.tags }}
+            <ul class="tags-list">
+                {{ range . }}
+                <li> <a href="{{ " tags" | absURL }}{{ . | urlize }}" class="tag">{{ . }}</a> </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </aside>
         <article class="content">
             {{ .Content }}
         </article>
     </div>
 </main>
-<aside class="meta">
-    <div>
-        {{ with .Params.topics }}
-        <ul id="topics">
-            {{ range . }}
-            <li><a href="{{ " topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
-            {{ end }}
-        </ul>
-        {{ end }}
-        {{ with .Params.tags }}
-        <ul class="tags-list">
-            {{ range . }}
-            <li> <a href="{{ " tags" | absURL }}{{ . | urlize }}" class="tag">{{ . }}</a> </li>
-            {{ end }}
-        </ul>
-        {{ end }}
-    </div>
-    <div>
-        {{ with .PrevInSection }}
-        <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-        {{ with .NextInSection }}
-        <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-    </div>
+<aside class="navigator">
+    {{ with .PrevInSection }}
+    <a class="previous link" href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a class="next link" href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
 </aside>
 {{ end }}

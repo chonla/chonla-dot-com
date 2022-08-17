@@ -1,4 +1,19 @@
 .meta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .updated-date {
+        margin-top: 0;
+        line-height: 1.7;
+        font-weight: 400;
+        font-size: 10pt;
+        color: $secondary-text-color;
+        display: flex;
+        align-items: center;
+    }
+
     .tags-list {
         margin: 0;
         display: flex;
@@ -12,11 +27,15 @@
             background-color: $tag-background-color;
             padding: 0 12px;
             border-radius: $content-radius;
-            
+
             &>.tag {
+                display: flex;
+                align-items: center;
                 color: $tag-text-color;
                 text-decoration: none;
                 font-weight: 400;
+                font-size: 10pt;
+                line-height: 1.7;
             }
         }
     }
