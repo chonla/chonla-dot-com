@@ -73,6 +73,14 @@
                 &>strong {
                     color: $emphasized-text-color;
                 }
+
+                &>a {
+                    color: $link-color;
+                
+                    &:hover {
+                        color: $link-hover-color;
+                    }                
+                }
             }
         }
     }
