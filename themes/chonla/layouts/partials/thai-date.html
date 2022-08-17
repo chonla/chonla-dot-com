@@ -1,0 +1,7 @@
+{{ $monthList := slice "ม.ค." "ก.พ." "มี.ค." "เม.ย." "พ.ค." "มิ.ย." "ก.ค." "ส.ค" "ก.ย." "ต.ค." "พ.ย." "ธ.ค." }}
+{{ $day := .Format "2" }}
+{{ $month := .Format "1" | int }}
+{{ $monthIndex := sub $month 1 }}
+{{ $monthName := index $monthList $monthIndex }}
+{{ $year := .Format "2006" | int | add 543 }}
+{{ $day }} {{ $monthName }} {{ $year }}

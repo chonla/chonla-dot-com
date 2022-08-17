@@ -5,6 +5,9 @@ draft: false
 summary: การสร้าง Request Signature ด้วย HMAC บน Postman
 cover_image: send-request-signature-with-postman-cover.png
 slug: send-request-signature-with-postman
+tags:
+    - postman
+    - hmac
 ---
 
 ที่มาที่ไปคือกำลังทำ API ที่ต้องมีการ Verify Request ที่ส่งมาด้วย Digital Signature เพื่อให้ฝั่ง Server ยอมรับได้ว่าคนที่ส่ง Request นั้นคือต้นทางที่เชื่อถือได้จริง ๆ โดยในการส่ง Digital Signature มาที่ API นี้จะกำหนดให้ส่งค่า 2 ค่ามาใน Request Header ค่าแรกทำหน้าที่ระบุตัวผู้ส่ง สมมติให้ชื่อว่า `X-RequestSender` และอีกค่าหนึ่งทำหน้าที่เป็น Digital Signature สมมติให้ชื่อว่า `X-RequestSignature` โดยค่าของ `X-RequestSender` จะเป็น string ธรรมดาที่บอกว่าใครส่งมา ส่วน `X-RequestSignature` จะเกิดจากการคำนวณตามแต่ละ Request ซึ่งถ้า Request ที่เหมือนกัน แต่คนส่งต่างกัน ค่า `X-RequestSignature` ก็จะต่างกันไปด้วย

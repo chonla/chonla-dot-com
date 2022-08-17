@@ -5,6 +5,10 @@ draft: false
 summary: เรื่องราวเกี่ยวกับการสร้าง chonla.com
 cover_image: all-new-chonla-dot-com-cover.png
 slug: all-new-chonla-dot-com
+tags:
+    - hugo
+    - netlify
+    - migration
 ---
 
 แรกเริ่มเลย chonla.com เคยใช้เป็น self-hosted wordpress ที่มีทุกอย่างเป็น WYSIWYG (What you see is what you get) ทำให้การสร้าง blog ทำได้ง่ายมาก แค่เปิด editor แล้วก็พิมพ์ แล้วก็ publish ก็เป็นอันจบ
@@ -15,7 +19,7 @@ slug: all-new-chonla-dot-com
 
 ท้ายที่สุดก็ได้ออกมาเป็น TO-DO List ประมาณนี้
 
-### To-DO List
+### TO-DO List
 
 * ~~export เนื้อหาทั้งหมดบน wordpress ได้มาเป็น sql file~~ (เดี๋ยวค่อยหาวิธีแปลงเป็น markdown ทีหลัง)
 * ~~ย้าย domain chonla.com ออกจาก hosting เจ้าเดิม~~

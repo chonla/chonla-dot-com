@@ -5,6 +5,9 @@ draft: false
 summary: บันทึกเลือกสีให้กับ chonla.com
 cover_image: chonla-dot-com-color-scheme-cover.png
 slug: chonla-dot-com-color-scheme
+updated_at: 2022-08-17T18:49:20+07:00
+tags:
+    - color scheme
 ---
 
 อยากได้ color scheme ที่อ่านง่าย สบายตา ก็ไปหาแรงบันดาลใจจาก google ก็เจออันนี้น่าสนใจดี [Soft Neutrals](https://dribbble.com/shots/10053442-neutrals) ออกแบบโดย Ashleigh Green ([@ashsgreen](https://dribbble.com/ashsgreen)) ด้วยสาเหตุที่โทนสีดูสบายตา ไม่จัดจ้านเกินไปจนทำให้ปวดตา ตัวหนังสือ พื้นหลังที่ใช้สีโทนนี้น่าจะอ่านง่าย เลยลองเอามาเป็นสีพื้นฐานของเว็บดู

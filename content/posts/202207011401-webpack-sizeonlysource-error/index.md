@@ -5,6 +5,9 @@ draft: false
 summary: การแก้ปัญหา Content and Map of this Source is not available (only size() is supported) บน Angular
 cover_image: webpack-sizeonlysource-error-cover.png
 slug: webpack-sizeonlysource-error
+tags:
+    - angular
+    - troubleshoot
 ---
 
 ตอนจะรัน `ng serve` แล้วดันเจอปัญหา ขึ้น error ประมาณนี้

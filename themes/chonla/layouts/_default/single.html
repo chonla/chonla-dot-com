@@ -4,20 +4,20 @@
         <h1><a href="/" class="link">{{.Site.Title}}</a> - {{.Title}}</h1>
     </header>
     <div class="body">
-        <div class="cover" style="background-image: url('{{ .Params.cover_image }}')">
-
-        </div>
+        <div class="cover" style="background-image: url('{{ .Params.cover_image }}')"></div>
+        {{ if .Params.updated_at }}
+        {{ $updatedDate := .Params.updated_at | time }}
+        <div class="updated-date">อัปเดตวันที่ {{ partial "thai-date.html" $updatedDate }}</div>
+        {{ else }}
+        <div class="updated-date">อัปเดตวันที่ {{ partial "thai-date.html" .Date }}</div>
+        {{ end }}
         <article class="content">
             {{ .Content }}
         </article>
     </div>
 </main>
-<aside id="meta">
+<aside class="meta">
     <div>
-        <section>
-            <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-            <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-        </section>
         {{ with .Params.topics }}
         <ul id="topics">
             {{ range . }}
@@ -26,9 +26,9 @@
         </ul>
         {{ end }}
         {{ with .Params.tags }}
-        <ul id="tags">
+        <ul class="tags-list">
             {{ range . }}
-            <li> <a href="{{ " tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+            <li> <a href="{{ " tags" | absURL }}{{ . | urlize }}" class="tag">{{ . }}</a> </li>
             {{ end }}
         </ul>
         {{ end }}

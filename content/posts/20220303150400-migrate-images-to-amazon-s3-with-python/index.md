@@ -5,6 +5,11 @@ draft: false
 summary: เอารูปจากเว็บมา transform แล้วเอาไปเก็บไว้ใน Amazon S3 ด้วย Python
 cover_image: migrate-images-to-amazon-s3-with-python-cover.png
 slug: migrate-images-to-amazon-s3-with-python
+tags:
+    - python
+    - amazon s3
+    - web scrape
+    - image processing
 ---
 
 ได้โจทย์ที่ต้องเอารูปจากเว็บไซต์ของลูกค้าไปเก็บไว้ใน S3 แล้วต้องทำด้วย python เพราะใช้ dagster โดยค่าที่ได้มาจะเป็น URL ของรูปเท่านั้น แถมอีกนิดคือ จะต้อง resize รูปให้เล็กลงด้วย เพราะรูปที่ได้มามันใหญ่มาก ไม่ได้อยากได้ใหญ่ขนาดนั้น เรามาลองดูวิธีกัน
