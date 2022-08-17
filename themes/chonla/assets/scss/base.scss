@@ -1,8 +1,4 @@
 * {
-    font-family: $primary-font;
-    font-smooth: auto;
-    -webkit-font-smooth: auto;
-    -moz-osx-font-smooth: auto;
 }
 
 body {
@@ -11,4 +7,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: $primary-font;
+    font-smooth: auto;
+    -webkit-font-smooth: auto;
+    -moz-osx-font-smooth: auto;
+}
+
+div, pre, code {
+    box-sizing: border-box;
+}
+
+.link {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover-color;
+    }
 }

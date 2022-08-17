@@ -13,7 +13,7 @@ slug: send-request-signature-with-postman
 
 ตัวแปรที่ HMAC SHA256 ต้องการก็มีแค่ 2 อย่างคือ Key ที่ใช้ในการ Sign และตัว Content ที่ต้องการ Sign หลังจากตรงนี้ จะของเรียก Key ว่า AppSecret และ Content ว่า PlainText โดยแต่ละภาษาก็มีวิธีการเขียนที่แตกต่างกัน ประมาณนี้
 
-**Golang**
+### Golang
 
 ```go
 hm := hmac.New(sha256.New, []byte(appSecret))
@@ -21,7 +21,7 @@ hm.Write(plainText)
 signature := []byte(base64.StdEncoding.EncodeToString(hm.Sum(nil)))
 ```
 
-**.NET**
+### .NET
 
 ```csharp
 String signature = string.Empty;
@@ -36,7 +36,8 @@ using (HMACSHA256 hmacSha256 = new HMACSHA256(unicodeKey)) {
 ```http
 POST /api/some-api HTTP/1.1
 X-RequestSender: app-name-1
-X-RequestSignature: J4xWW48OrBmJAxWS3Cw4S6R/4fnoKnt2mn83+yx40hs= Content-Type: application/json
+X-RequestSignature: J4xWW48OrBmJAxWS3Cw4S6R/4fnoKnt2mn83+yx40hs=
+Content-Type: application/json
 Host: somehostname
 Content-Length: 41
 {
@@ -53,17 +54,17 @@ Content-Length: 41
 สมมติว่าเรามีการประกาศ Secret ของ App เอาไว้ใน environment ชื่อ appSecret และ App name ที่จะทำหน้าที่เป็น Request Sender ในชื่อ appName
 
 ```js
-const appName = pm.environment.get(“appName”);
-const appSecret = pm.environment.get(“appSecret”);
+const appName = pm.environment.get("appName");
+const appSecret = pm.environment.get("appSecret");
 var signBytes = CryptoJS.HmacSHA256(pm.request.body.raw, appSecret);
 var signBase64 = CryptoJS.enc.Base64.stringify(signBytes);
-pm.request.headers.add(appName, “X-RequestSender”);
-pm.request.headers.add(signBase64, “X-RequestSignature”);
+pm.request.headers.add(appName, "X-RequestSender");
+pm.request.headers.add(signBase64, "X-RequestSignature");
 ```
 
-**บรรทัด 1–2** จะเป็นการอ่าน *appName* และ *appSecret* จาก environment ที่เราประกาศไว้แล้ว
-**บรรทัดที่ 3** ก็จะทำการสร้าง signature โดยการ sign ตัว request body ของเราด้วย *appSecret* ที่อ่านมา โดยใช้ HMAC SHA256
-**บรรทัดที่ 4** ทำการ encode signature ให้อยู่ในรูป base64
-**บรรทัดที่ 5–6** เอาค่าที่ได้ยัดเข้าไปให้กับ header ที่กำลังจะส่ง
+* **บรรทัด 1–2** จะเป็นการอ่าน *appName* และ *appSecret* จาก environment ที่เราประกาศไว้แล้ว
+* **บรรทัดที่ 3** ก็จะทำการสร้าง signature โดยการ sign ตัว request body ของเราด้วย *appSecret* ที่อ่านมา โดยใช้ HMAC SHA256
+* **บรรทัดที่ 4** ทำการ encode signature ให้อยู่ในรูป base64
+* **บรรทัดที่ 5–6** เอาค่าที่ได้ยัดเข้าไปให้กับ header ที่กำลังจะส่ง
 
 เท่านี้เอง

@@ -49,11 +49,11 @@
             &>.summary {
                 &>.abridge {
                     &>.header {
-                        color: #c87955;
+                        color: $link-hover-color;
                         @include transition-animation;
                     }
                     &>.body {
-                        color: #c87955;
+                        color: $link-hover-color;
                         @include transition-animation;
                     }
                 }
