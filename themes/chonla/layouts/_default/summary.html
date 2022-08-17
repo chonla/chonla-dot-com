@@ -1,13 +1,6 @@
 <a href="{{ .Slug }}">
-    {{ $coverUrl := "" }}
-    {{ if .Params.cover_image }}
-        {{ $cover := .Resources.Get .Params.cover_image }}
-        {{ if $cover }}
-            {{ $coverUrl = $cover.RelPermalink }}
-        {{ end }}
-    {{ end }}
     <div class="summary">
-        <div class="cover" style="background-image: url('{{ $coverUrl }}')"></div>
+        <div class="cover" style="background-image: url('{{ .Params.slug }}/{{ .Params.cover_image }}')"></div>
         <div class="abridge">
             <div class="header">{{ .Title }}</div>
             <div class="body">{{ .Summary }}</div>
