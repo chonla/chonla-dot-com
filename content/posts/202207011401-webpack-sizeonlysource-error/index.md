@@ -1,7 +1,10 @@
 ---
-title: "แก้ปัญหาตอน run angular แล้วเจอ error Error: Content and Map of this Source is not available (only size() is supported)"
+title: "Content and Map of this Source is not available"
 date: 2022-07-01T14:01:34+07:00
 draft: false
+summary: การแก้ปัญหา Content and Map of this Source is not available (only size() is supported) บน Angular
+cover_image: webpack-sizeonlysource-error-cover.png
+slug: webpack-sizeonlysource-error
 ---
 
 ตอนจะรัน `ng serve` แล้วดันเจอปัญหา ขึ้น error ประมาณนี้

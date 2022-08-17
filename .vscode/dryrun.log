@@ -1,0 +1,4 @@
+make: Entering directory `/Users/chonla/work/bayo/lab/chonla-dot-com'
+hugo server -t chonla
+make: Leaving directory `/Users/chonla/work/bayo/lab/chonla-dot-com'
+ 

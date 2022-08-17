@@ -1,0 +1,27 @@
+@mixin header-text {
+    font-size: 18pt;
+    margin-bottom: 1.5rem;
+}
+
+@mixin summary-block {
+    text-align: left;
+    color: $summary-text-color;
+}
+
+@mixin summary-header-text {
+    font-size: 14pt;
+    font-weight: 600;
+    padding: 8px 8px 0;
+    @include summary-block;
+}
+
+@mixin summary-body-text {
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 0 8px 8px;
+    @include summary-block;
+}
+
+@mixin transition-animation {
+    transition: all 0.19s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}

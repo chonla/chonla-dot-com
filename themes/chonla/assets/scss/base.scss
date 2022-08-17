@@ -1,0 +1,14 @@
+* {
+    font-family: $primary-font;
+    font-smooth: auto;
+    -webkit-font-smooth: auto;
+    -moz-osx-font-smooth: auto;
+}
+
+body {
+    background-color: $site-background-color;
+    color: $primary-text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

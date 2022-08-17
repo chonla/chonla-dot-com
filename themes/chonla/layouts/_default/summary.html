@@ -1,0 +1,14 @@
+<a href="{{ .Slug }}">
+    {{ $cover := .Resources.Get .Params.cover_image }}
+    {{ $coverUrl := "" }}
+    {{ if $cover }}
+    {{ $coverUrl = $cover.RelPermalink }}
+    {{ end }}
+    <div class="summary">
+        <div class="cover" style="background-image: url('{{ $coverUrl }}')"></div>
+        <div class="abridge">
+            <div class="header">{{ .Title }}</div>
+            <div class="body">{{ .Summary }}</div>
+        </div>
+    </div>
+</a>
