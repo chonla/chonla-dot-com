@@ -13,7 +13,7 @@ slug: chonla-dot-com-color-scheme
 | - | :-: | :-: | - |
 | Worn Leather | #474747 | ![](worn-leather.svg) | ข้อความทั้งหมด, ลิงก์ block |
 | Suede | #c87955 | ![](suede.svg) | ลิงก์ข้อความ, ข้อความที่อยากเน้นเป็นพิเศษ, ลิงก์ block ตอน hover |
-| Faded Denim | #9ca6b6 | ![](faded-denim.svg) | ยังไม่รู้ |
+| Faded Denim | #9ca6b6 | ![](faded-denim.svg) | ขอบตาราง |
 | Wool | #d5c8be | ![](wool.svg) | ยังไม่รู้ |
 | Silk | #f9d4bb | ![](silk.svg) | ยังไม่รู้ |
 | Linen | #f8eade | ![](linen.svg) | ยังไม่รู้ |
