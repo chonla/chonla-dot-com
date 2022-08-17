@@ -27,11 +27,15 @@
     </div>
 </main>
 <aside class="navigator">
-    {{ with .PrevInSection }}
-    <a class="previous link" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}
-    {{ with .NextInSection }}
-    <a class="next link" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}
+    <div>
+        {{ with .PrevInSection }}
+        <a class="previous link" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
+    <div>
+        {{ with .NextInSection }}
+        <a class="next link" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
 </aside>
 {{ end }}

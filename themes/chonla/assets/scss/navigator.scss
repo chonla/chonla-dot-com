@@ -5,39 +5,41 @@
     justify-content: space-between;
     margin-top: 32px;
 
-    &>.previous {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        column-gap: 4px;
+    &>div {
+        &>.previous {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 4px;
 
-        &::before {
-            display: block;
-            content: ' ';
-            background-image: url('/images/chevron-left.svg');
-            height: 16px;
-            width: 16px;
-            background-size: contain;
-            background-position: center;
+            &::before {
+                display: block;
+                content: ' ';
+                background-image: url('/images/chevron-left.svg');
+                height: 16px;
+                width: 16px;
+                background-size: contain;
+                background-position: center;
+            }
         }
-    }
 
-    &>.next {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        column-gap: 4px;
+        &>.next {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 4px;
 
-        &::after {
-            display: block;
-            content: ' ';
-            background-image: url('/images/chevron-right.svg');
-            height: 16px;
-            width: 16px;
-            background-size: contain;
-            background-position: center;
+            &::after {
+                display: block;
+                content: ' ';
+                background-image: url('/images/chevron-right.svg');
+                height: 16px;
+                width: 16px;
+                background-size: contain;
+                background-position: center;
+            }
         }
     }
 }
