@@ -6,38 +6,25 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Tue Aug 16 18:09:58 2022
+# Make data base, printed on Fri Sep  9 12:26:17 2022
 
 # Variables
 
-# environment
-DEALERS_TIER_2 = A188
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-AWS_SECRET_ACCESS_KEY = nUVp4807v1s5j+0mVlyhsyvrc/wO3AktbqfpBiTH
-# environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 LC_CTYPE = UTF-8
-# environment
-REPORTING_DB_PASSWORD = postgres
-# environment
-BIGQUERY_PRIVATE_KEY_ID = 310059d61eb68e27f20f9d6f32c813d6ce70ce52
 # environment
 NVM_INC = /Users/chonla/.nvm/versions/node/v16.14.2/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-PLATFORMIO_IDE = 2.5.2
-# environment
-SMS_TIER_2 = 
+PLATFORMIO_IDE = 2.5.4
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -50,147 +37,76 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# environment
-DEALERS_TIER_4 = 
-# environment
-REPORTING_DB_HOST = localhost
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-SKJ2_SCHEDULER_NAME = scheduler
-# environment
-SYNC_CAR_IMAGE_TO_S3 = true
-# environment
-STRING_PROTECTION_KEY = +BpqDBqR45bWN4NXYf1ahFmDwppkc+zcLfyN7Y+2044=
-# environment
 WARP_IS_LOCAL_SHELL_SESSION = 1
-# environment
-SMS_TIER_4 = 
-# environment
-SKJ_DB_PASSWORD = postgres
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-SKJ_API_CLIENT_ID = JzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik
-# environment
-USER = chonla
-# environment
 VSCODE_CWD = /Users/chonla/work/bayo/lab/chonla-dot-com
-# environment
-SKJ_API_BASE_URL = https://skjservice-dev.mazda.co.th/api/mi
-# environment
-POSTGRES_PASSWORD = postgres_password
 # environment
 WARP_USE_SSH_WRAPPER = 1
 # environment
 NO_PROXY = 127.0.0.1
 # environment
-S3_BUCKET = sky-public-dev
-# environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-BIGQUERY_CLIENT_X509_CERT_URL = https://www.googleapis.com/robot/v1/metadata/x509/svc-skj-bq%40sky-journey-dev.iam.gserviceaccount.com
-# environment
-VIRTUAL_ENV = /Users/chonla/Library/Caches/pypoetry/virtualenvs/data-orchestrator-Weus0lJE-py3.10
-# environment
-REPORTING_DB_USER = postgres
 # environment
 NVM_BIN = /Users/chonla/.nvm/versions/node/v16.14.2/bin
 # environment
-SKJ_DB_USER = postgres
-# environment
-LaunchInstanceID = CFC1888D-BC18-45A4-9D2A-7F1D1E045A47
-# environment
-DAGSTER_CURRENT_IMAGE = sky-journey-data-orchestrator/code
+LaunchInstanceID = 909DF811-730E-4485-B04D-38F02CCFA914
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# environment
-SKJ_API_CLIENT_SECRET = xWXGpZ8KiaCiepo6LqrlRe153zeRW_iNgr4
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-POSTGRES_USER = postgres_user
-# environment
-SKJ_API_USER_NAME = skyjourney-dev
-# environment
-DEALERS_TIER_3 = A187,A193
-# environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.lTCxk2a2rl/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.8ULY9hygvX/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-SKJ2_SCHEDULER_SECRET = 37gGOrEmk0RgK46fygKsb4XUnvBV0Fin
-# environment
-SKJ2_API_BASE_URL = https://octo.dbiteam.com/api
-# environment
 PWD = /Users/chonla/work/bayo/lab/chonla-dot-com
-# environment
-BIGQUERY_PRIVATE_KEY = 
-# environment
-SMS_TIER_3 = 
 # environment
 WARP_PS1 = %(?:%{[01;32m%}➜ :%{[01;31m%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
-SCS_TIER_1 = 
-# environment
-SKJ_API_USER_ID = 3e919422-24d0-4282-8b07-1dfd1e4d93df
-# environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# environment
-DAGSTER_POSTGRES_USER = postgres_user
 # environment
 MANPATH = /Users/chonla/.nvm/versions/node/v16.14.2/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/chonla
-# environment
-REPORTING_DB_PORT = 5433
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-SKJ_DB_HOST = localhost
-# environment
-VSCODE_CODE_CACHE_PATH = /Users/chonla/Library/Application Support/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
+VSCODE_CODE_CACHE_PATH = /Users/chonla/Library/Application Support/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 LOGNAME = chonla
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 NVM_CD_FLAGS = -q
-# environment
-SKJ_DB_PORT = 5432
 # environment
 ZSH = /Users/chonla/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-REPORTING_DB_DB = skj2report
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-DISABLED_DEALERS = B081
-# environment
-PLATFORMIO_PATH = /Users/chonla/.platformio/python3/bin:/opt/homebrew/opt/openjdk@11/bin:/Users/chonla/apache-jmeter-5.4.3/bin:/Users/chonla/go/bin:/opt/homebrew/opt/openssl@3/bin:/Users/chonla/.poetry/bin:/opt/homebrew/opt/python@3.9/bin:/Users/chonla/.nvm/versions/node/v16.14.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PLATFORMIO_PATH = /Users/chonla/.platformio/python3/bin:/opt/homebrew/opt/openjdk@11/bin:/Users/chonla/apache-jmeter-5.4.3/bin:/Users/chonla/go/bin:/opt/homebrew/opt/openssl@3/bin:/Users/chonla/.poetry/bin:/opt/homebrew/opt/python@3.9/bin:/Users/chonla/.nvm/versions/node/v16.14.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/chonla/Library/Application Support/Coursier/bin
 # environment
 COLORTERM = truecolor
-# environment
-SLACK_TOKEN = xoxb-12345
- 
 # default
 MAKE = $(MAKE_COMMAND)
-# environment
-SKJ_DB_DB = skyjourney
 # default
 MAKECMDGOALS := all
 # environment
-PATH = /opt/homebrew/opt/openjdk@11/bin:/Users/chonla/apache-jmeter-5.4.3/bin:/Users/chonla/go/bin:/opt/homebrew/opt/openssl@3/bin:/Users/chonla/.poetry/bin:/opt/homebrew/opt/python@3.9/bin:/Users/chonla/.nvm/versions/node/v16.14.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH = /opt/homebrew/opt/openjdk@11/bin:/Users/chonla/apache-jmeter-5.4.3/bin:/Users/chonla/go/bin:/opt/homebrew/opt/openssl@3/bin:/Users/chonla/.poetry/bin:/opt/homebrew/opt/python@3.9/bin:/Users/chonla/.nvm/versions/node/v16.14.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/chonla/Library/Application Support/Coursier/bin
 # environment
 SHLVL = 5
 # environment
@@ -200,23 +116,13 @@ JAVA_HOME = /opt/homebrew/opt/openjdk@11
 # default
 MAKE_VERSION := 3.81
 # environment
-POSTGRES_DB = postgres_db
+USER = chonla
 # makefile
 .DEFAULT_GOAL := serve
-# environment
-BIGQUERY_PROJECT_ID = sky-journey-dev
-# environment
-SCS_TIER_2 = 
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-AWS_ACCESS_KEY_ID = AKIAQK3JB5V3TN3SWFX6
-# environment
-BIGQUERY_CLIENT_EMAIL = svc-skj-bq@sky-journey-dev.iam.gserviceaccount.com
-# environment
-BIGQUERY_CLIENT_ID = 113870888382583252361
 # default
 MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # environment
@@ -228,37 +134,27 @@ TMPDIR = /var/folders/qx/fgj1fx6j76jfkr89t24vj9v80000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/chonla/Library/Application Support/Code/1.70.1-main.sock
-# environment
-DAGSTER_POSTGRES_DB = postgres_db
+VSCODE_IPC_HOOK = /Users/chonla/Library/Application Support/Code/1.71.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
 MAKEFLAGS = Rrqp
 # environment
-INITIAL_PASSWORD = 
-# environment
 MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = v0.2022.08.08.09.21.stable_00
+TERM_PROGRAM_VERSION = v0.2022.08.31.18.11.stable_00
 # environment
 NVM_DIR = /Users/chonla/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.16761248.16761254.A1EA4808-0C1C-4C7E-AC35-D9C75541F30A
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.19131612.19131618.61254BD1-9B7F-43F6-B505-AB4C6DC813C8
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-SCS_TIER_4 = 
-# environment
-DATA_ORCHESTRATOR_ENVIRONMENT = Local
 # automatic
 +F = $(notdir $+)
-# environment
-SKJ1_TO_SKJ2_DEALERS = B018,A195,A199,A197
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -267,14 +163,10 @@ __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
-# environment
-DEALERS_TIER_1 = B018,A195,A199,A197
 # automatic
 <F = $(notdir $<)
 # environment
 PLATFORMIO_CALLER = vscode
-# environment
-DISABLED_SYNC_CUSTOMER = true
 # environment
 PAGER = less
 # environment
@@ -282,17 +174,11 @@ LC_ALL = C
 # environment
 CONDA_CHANGEPS1 = false
 # environment
-SMS_TIER_1 = 
-# environment
-DAGIT_BASE_URL = http://localhost:8000
-# environment
-SECURITYSESSIONID = 186ac
+SECURITYSESSIONID = 186ab
 # automatic
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
-# environment
-POETRY_ACTIVE = 1
 # environment
 MAKELEVEL := 0
 # environment
@@ -300,13 +186,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 86182
-# environment
-DAGSTER_POSTGRES_PASSWORD = postgres_password
-# environment
-SCS_TIER_3 = 
+VSCODE_PID = 82773
 # variable set hash-table stats:
-# Load=145/1024=14%, Rehash=0, Collisions=12/168=7%
+# Load=88/1024=9%, Rehash=0, Collisions=3/111=3%
 
 # Pattern-specific Variable Values
 
@@ -314,7 +196,7 @@ SCS_TIER_3 =
 
 # Directories
 
-# . (device 16777233, inode 12879109): 16 files, no impossibilities.
+# . (device 16777231, inode 12879109): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -375,6 +257,8 @@ serve:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 16 18:09:58 2022
+# Finished Make data base on Fri Sep  9 12:26:17 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+
