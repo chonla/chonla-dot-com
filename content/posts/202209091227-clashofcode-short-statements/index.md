@@ -3,7 +3,7 @@ title: โค้ด python แบบสั้น ๆ
 date: 2022-09-09T12:27:00+07:00
 draft: false
 summary: เอาไว้เล่น codingame clash of code แบบ shortest mode
-cover_image: slug: clashofcode-short-statements-cover.png
+cover_image: clashofcode-short-statements-cover.png
 slug: clashofcode-short-statements
 tags:
     - clashofcode

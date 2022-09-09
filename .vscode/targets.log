@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Fri Sep  9 12:26:17 2022
+# Make data base, printed on Fri Sep  9 13:34:28 2022
 
 # Variables
 
@@ -108,7 +108,7 @@ MAKECMDGOALS := all
 # environment
 PATH = /opt/homebrew/opt/openjdk@11/bin:/Users/chonla/apache-jmeter-5.4.3/bin:/Users/chonla/go/bin:/opt/homebrew/opt/openssl@3/bin:/Users/chonla/.poetry/bin:/opt/homebrew/opt/python@3.9/bin:/Users/chonla/.nvm/versions/node/v16.14.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/chonla/Library/Application Support/Coursier/bin
 # environment
-SHLVL = 5
+SHLVL = 6
 # environment
 XPC_FLAGS = 0x0
 # environment
@@ -144,11 +144,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = v0.2022.08.31.18.11.stable_00
+TERM_PROGRAM_VERSION = v0.2022.09.07.14.56.stable_00
 # environment
 NVM_DIR = /Users/chonla/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.19131612.19131618.61254BD1-9B7F-43F6-B505-AB4C6DC813C8
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.19131612.19131618.89991E7E-E25E-4940-90C0-B59376F52523
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -257,7 +257,7 @@ serve:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Sep  9 12:26:17 2022
+# Finished Make data base on Fri Sep  9 13:34:28 2022
 
  
 make: *** No rule to make target `all'.  Stop.
