@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mega Stopwatch</title>
+<meta name="description" content="Mega Stopwatch collects no data, contains no analytics, and has no network access.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7f7;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #d8d8d8;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e6e6e6;
+      --muted: #9a9a9a;
+      --rule: #2c2c2c;
+      --card: #1a1a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; letter-spacing: -.005em; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .lede {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: .6rem;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1rem;
+  }
+  .lede p { margin: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: .25rem;
+    padding: .05rem .3rem;
+  }
+  a { color: inherit; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="meta" style="margin:0 0 1rem"><a href="/mega-stopwatch/">&larr; Mega Stopwatch</a></p>
+  <h1>Privacy Policy — Mega Stopwatch</h1>
+  <p class="meta">Effective 9 August 2026 · Applies to the Android app <code>com.bayo.megastopwatch</code> · The iOS app has <a href="ios/">its own policy</a></p>
+
+  <div class="lede">
+    <p><strong>Mega Stopwatch collects nothing about you.</strong> It has no analytics, no
+    advertising, no accounts, and no third-party services. It does not request internet access,
+    and it contains no code that could send your information anywhere.</p>
+  </div>
+
+  <h2>Information the app collects</h2>
+  <p>None. The app has no server, no account system, and no way to identify you or your device.
+  Nothing you do in the app is recorded or reported to the developer or to anyone else.</p>
+
+  <h2>The microphone</h2>
+  <p>Mega Stopwatch has an optional <strong>Voice stop</strong> feature that stops the running
+  stopwatch when it hears you, so you do not have to touch the phone. It is <strong>off by
+  default</strong>. If you switch it on, Android asks for microphone permission, and you can
+  refuse or revoke it at any time in Android's settings.</p>
+  <ul>
+    <li>The microphone is opened <strong>only while the stopwatch is actually counting</strong>,
+      and on the Voice stop setup screen where recording is the point. It is never open while the
+      app is paused, idle, counting down before a start, or in the background.</li>
+    <li>All listening and matching happens <strong>on your device</strong>, in the app's own
+      process. No audio is streamed, uploaded, or sent anywhere.</li>
+    <li>Audio is analysed as it arrives and then discarded. <strong>The app never writes a
+      recording to storage</strong> — there is no audio file to play back, share, or recover.</li>
+    <li>If you use the <strong>Say your word</strong> method, the app keeps a mathematical summary
+      of the three enrolment captures (MFCC feature frames) so it can recognise the word later.
+      This is not audio and cannot be turned back into audio or speech. You can erase it at any
+      time with <strong>Clear</strong> on the Voice stop screen.</li>
+  </ul>
+
+  <h2>Information stored on your device</h2>
+  <p>The app saves your settings — theme, delay durations, read-out choices, voice stop options —
+  and, if you enrolled one, the voice feature data described above. All of it lives in the app's
+  private storage on your phone, which other apps cannot read. Uninstalling Mega Stopwatch
+  removes it.</p>
+
+  <h2>Android backup</h2>
+  <p>Mega Stopwatch uses Android's standard app backup. If you have backup switched on in your
+  Android settings, the operating system may copy the app's <strong>settings</strong> to
+  <strong>your own Google account</strong>, so they return when you set up a new phone. This is
+  handled entirely by Android, not by the app; the developer has no access to it, and it is
+  governed by
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can turn it off
+  in Android's <em>System &rarr; Backup</em> settings.</p>
+  <p><strong>Your enrolled voice data is deliberately excluded from backup and from
+  phone-to-phone transfer.</strong> It never leaves your device by any route. The trade-off is
+  that if you reinstall the app or move to a new phone, you will need to record your stop word
+  again.</p>
+
+  <h2>Spoken read-outs</h2>
+  <p>If you switch on the countdown or elapsed-time read-outs, the app asks Android's
+  text-to-speech engine to say them. The only thing handed over is the phrase to be spoken — a
+  number or a duration such as "one minute fifteen seconds". Nothing about you is included. That
+  engine is a separate app chosen in your Android settings (often Google's) and is covered by its
+  own privacy policy, not this one.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><code>RECORD_AUDIO</code> — only for Voice stop, as described above. Requested when you
+      turn the feature on, never before.</li>
+    <li><code>VIBRATE</code> — haptic feedback for the countdown read-out and for the
+      hold-to-reset confirmation.</li>
+  </ul>
+  <p>The app deliberately does <strong>not</strong> declare the <code>INTERNET</code> permission.
+  Android therefore prevents it from making any network connection at all, whatever it might
+  try.</p>
+
+  <h2>Analytics, advertising and third parties</h2>
+  <p>There are none. Mega Stopwatch ships no analytics or crash-reporting SDK, shows no ads,
+  contains no tracking or advertising identifiers, and does not sell or share information with
+  anyone — because it has none to share.</p>
+
+  <h2>Children</h2>
+  <p>The app is suitable for all ages. Since it collects no personal information from anyone, it
+  collects none from children.</p>
+
+  <h2>Google Play</h2>
+  <p>Google Play collects its own statistics about installs, uninstalls, crashes and ratings for
+  every app on the store. That happens through Google Play itself rather than through anything in
+  Mega Stopwatch, and the developer sees only anonymous, aggregated figures. See
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If a future version of the app changes what it does with your information, this page will be
+  updated before that version is released, and the effective date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:chonlasith@gmail.com">chonlasith@gmail.com</a></p>
+
+  <footer>Mega Stopwatch · Chonlasith Jucksriporn</footer>
+</main>
+</body>
+</html>
