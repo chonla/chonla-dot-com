@@ -1,8 +1,0 @@
-baseURL = 'https://www.chonla.com/'
-languageCode = 'en-us'
-title = '@chonla'
-theme = 'chonla'
-summaryLength = 30
-
-[permalinks]
-  posts = '/:slug/'
