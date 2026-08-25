@@ -1,2 +1,4 @@
 node_modules/
 .DS_Store
+# Build output — Netlify regenerates it on every deploy.
+public/assets/css/style.compiled.css

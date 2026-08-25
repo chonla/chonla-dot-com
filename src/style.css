@@ -2,6 +2,7 @@
    so anything after it is no longer at the top of the file and gets dropped. */
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 @import "tailwindcss";
+@source "../public";
 
 .google-sans-normal {
   font-family: "Google Sans", sans-serif;

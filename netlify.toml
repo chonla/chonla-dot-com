@@ -1,0 +1,5 @@
+# The site is plain HTML; the only build step is compiling Tailwind.
+# Letting Netlify run it means a deploy can never ship a stale stylesheet.
+[build]
+  command = "npx @tailwindcss/cli -i src/style.css -o public/assets/css/style.compiled.css --minify"
+  publish = "public"
