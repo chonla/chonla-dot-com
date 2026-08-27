@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice stop: recording tips — Mega Stopwatch</title>
+<meta name="description" content="How to record your stop word so Mega Stopwatch hears you when it matters, and what to try when it does not.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7f7;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #d8d8d8;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e6e6e6;
+      --muted: #9a9a9a;
+      --rule: #2c2c2c;
+      --card: #1a1a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; letter-spacing: -.005em; }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .35rem; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .lede {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: .6rem;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1rem;
+  }
+  .lede p { margin: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: .25rem;
+    padding: .05rem .3rem;
+  }
+  a { color: inherit; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="meta" style="margin:0 0 1rem"><a href="/mega-stopwatch/">&larr; Mega Stopwatch</a></p>
+  <h1>Voice stop: recording tips</h1>
+  <p class="meta">Updated 27 August 2026 · Applies to the Android and iOS apps</p>
+
+  <div class="lede">
+    <p><strong>How well voice stop works is mostly decided in the thirty seconds you spend
+    recording your word.</strong> The app compares what it hears against your own recordings and
+    nothing else, so if you record calmly and then speak while straining, it can miss you — at
+    exactly the moment you need it.</p>
+  </div>
+
+  <h2>First, pick the right method</h2>
+  <p>Settings &rarr; <strong>Far from device</strong> &rarr; <strong>Stop method</strong>.</p>
+  <ul>
+    <li><strong>Loud voice</strong> stops the clock on any sound loud enough. Nothing to record.
+      Good in a quiet room, on your own. In a gym with music, dropped weights or other people, it
+      will stop on things that are not you.</li>
+    <li><strong>Say your word</strong> listens for one word you recorded. It takes a minute to set
+      up and holds up far better in a noisy room, because a barbell hitting the floor does not
+      sound like your word.</li>
+  </ul>
+
+  <h2>Record the way you will actually sound</h2>
+  <p>This is the single thing that matters most, and it is easy to get wrong.</p>
+  <p>Your voice at the end of a hard set is not your normal voice. It comes out short and clipped,
+  pitched higher because your throat is tight, with breath wrapped around it. The app matches on
+  the <em>shape of the sound</em>, and those are different shapes. A word recorded sitting calmly
+  on the sofa may not match the same word gasped at the end of a dead hang.</p>
+  <p>So:</p>
+  <ul>
+    <li><strong>Get out of breath first.</strong> Do the thing you are going to time — hold the
+      plank, hang off the bar — until it is genuinely hard, then record straight away without
+      letting your breathing settle.</li>
+    <li><strong>Record all three in that state.</strong> Do not recover between them.</li>
+    <li><strong>Make the three different on purpose.</strong> One at the very end of a hold, one
+      mid-effort, one closer to normal. The app checks your word against each recording and takes
+      the best match, so variety widens what it will accept rather than watering it down.</li>
+  </ul>
+  <p>If you would rather not exhaust yourself just to set it up: hold your breath for twenty
+  seconds, or brace hard against a wall, and force the word out at the end of an exhale. It is not
+  as good as the real thing, but it beats a relaxed recording.</p>
+  <p>You may see a warning that one recording sounds like a different word. On a deliberately
+  varied set that is expected. It is only ever a warning — the recording is still kept, and a
+  strained repeat is exactly what you want in there.</p>
+
+  <h2>Choosing a word</h2>
+  <ul>
+    <li><strong>One short word.</strong> Two syllables is plenty.</li>
+    <li><strong>Any language.</strong> The app does not know what language you are speaking — it
+      never looks the word up, it only compares sounds. Thai, Chinese, anything at all works
+      equally well. Made-up words work too.</li>
+    <li><strong>Not a grunt.</strong> Pick something that does not sound like the noises you
+      already make while lifting, or you will stop the clock by accident.</li>
+    <li><strong>Something you can still say when you are wrecked.</strong> A word that needs
+      careful articulation is the wrong word.</li>
+  </ul>
+
+  <h2>Test it before you rely on it</h2>
+  <p>The setup screen has a <strong>Test</strong> button. Tap it, say your word, and it tells you
+  whether that would have stopped the clock. Test it in the state and the place you will use it —
+  out of breath, in the actual room, with the phone where you actually leave it. A test that
+  passes on the sofa proves very little.</p>
+
+  <h2>If it does not hear you</h2>
+  <p>Work down this list in order:</p>
+  <ul>
+    <li><strong>Re-record, properly out of breath.</strong> This fixes it far more often than any
+      setting does. Use <strong>Re-record all</strong> and read the section above again.</li>
+    <li><strong>Move Sensitivity towards Lenient.</strong> It accepts a looser match.</li>
+    <li><strong>Turn up Mic boost</strong> if the phone is across the room. It makes a distant
+      voice reach the app.</li>
+    <li><strong>Check what is between you and the phone.</strong> A phone face-down on a mat, in a
+      pocket, or under a towel hears very little.</li>
+  </ul>
+
+  <h2>If it stops when it should not</h2>
+  <ul>
+    <li><strong>On Loud voice, in a noisy place: switch to Say your word.</strong> No sensitivity
+      setting can tell a dropped dumbbell from a shout, because both are just loud.</li>
+    <li><strong>Move Sensitivity towards Strict.</strong> It demands a closer match, or a louder
+      sound.</li>
+    <li><strong>Turn Mic boost down.</strong> Boost amplifies the room as well as you. If the
+      input meter says the sound is distorting, it is turned up too far — and a distorted word
+      matches worse, not better.</li>
+    <li><strong>Change your word</strong> if it sounds like something you say or grunt often.</li>
+  </ul>
+
+  <h2>The listening icon</h2>
+  <p>While the stopwatch runs, a small head-with-soundwaves icon sits next to the Stop button. That
+  is the app telling you the truth about the microphone:</p>
+  <ul>
+    <li><strong>Normal</strong> — it is listening, and your word will stop it.</li>
+    <li><strong>Dimmed and crossed out</strong> — it is not listening. Either you have not recorded
+      a word yet, or microphone permission was refused or revoked, or you are on the setup screen
+      recording, which borrows the microphone for as long as you are there.</li>
+    <li><strong>No icon</strong> — voice stop is switched off in Settings.</li>
+  </ul>
+
+  <h2>Things that look like faults but are not</h2>
+  <ul>
+    <li><strong>The microphone does not open during the countdown.</strong> It opens when the clock
+      actually starts, so the countdown beeps cannot stop the run before it begins.</li>
+    <li><strong>The app speaking the elapsed time does not stop the clock.</strong> It knows its own
+      voice is not yours.</li>
+    <li><strong>Headphones do not become the microphone.</strong> With a Bluetooth headset
+      connected, spoken read-outs play through it, but the app keeps listening on the phone's own
+      microphone — which is what you want when the phone is the thing across the room.</li>
+    <li><strong>Your recordings do not survive a reinstall or a new phone.</strong> The voice data
+      is deliberately excluded from backups and device transfers, so it never leaves the device by
+      any route. Record your word again on the new one.</li>
+  </ul>
+
+  <h2>What is actually stored</h2>
+  <p>No audio, ever. The app keeps a mathematical fingerprint of the three captures — a summary of
+  the sound's shape — which cannot be turned back into audio or speech. It stays on your device,
+  and <strong>Re-record all</strong> replaces it. Everything is matched on the device itself; the
+  app has no network access at all. See the privacy policy for
+  <a href="/mega-stopwatch/privacy/">Android</a> or <a href="/mega-stopwatch/privacy/ios/">iOS</a>.</p>
+
+  <h2>Still stuck?</h2>
+  <p>Tell me what happened and what you had tried:
+  <a href="mailto:chonlasith@gmail.com">chonlasith@gmail.com</a></p>
+
+  <footer>Mega Stopwatch · Chonlasith Jucksriporn</footer>
+</main>
+</body>
+</html>
